@@ -1,0 +1,47 @@
+{
+    "version": "1.100.2",
+    "description": "CLI distribution of the lightweight but powerful source code editor",
+    "homepage": "https://code.visualstudio.com/",
+    "license": {
+        "identifier": "Freeware",
+        "url": "https://code.visualstudio.com/License/"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://update.code.visualstudio.com/1.100.2/cli-win32-x64/stable#/dl.7z",
+            "hash": "777206485bf99ab8dfbb0f443f8066141ee78a44f55cf917e425c755519a2484"
+        },
+        "arm64": {
+            "url": "https://update.code.visualstudio.com/1.100.2/cli-win32-arm64/stable#/dl.7z",
+            "hash": "6261eb54fdd2475e7511bedabf512328746d30333655d59ed27f6c7da55fe791"
+        }
+    },
+    "bin": [
+        [
+            "code.exe",
+            "vscode-cli"
+        ]
+    ],
+    "checkver": {
+        "url": "https://update.code.visualstudio.com/api/update/cli-win32-x64/stable/latest",
+        "jsonpath": "$.name"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://update.code.visualstudio.com/$version/cli-win32-x64/stable#/dl.7z",
+                "hash": {
+                    "url": "https://update.code.visualstudio.com/api/update/cli-win32-x64/stable/latest",
+                    "jsonpath": "$.sha256hash"
+                }
+            },
+            "arm64": {
+                "url": "https://update.code.visualstudio.com/$version/cli-win32-arm64/stable#/dl.7z",
+                "hash": {
+                    "url": "https://update.code.visualstudio.com/api/update/cli-win32-arm64/stable/latest",
+                    "jsonpath": "$.sha256hash"
+                }
+            }
+        }
+    }
+}
