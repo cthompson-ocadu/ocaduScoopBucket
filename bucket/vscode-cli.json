@@ -1,5 +1,5 @@
 {
-    "version": "1.100.2",
+    "version": "1.100.3",
     "description": "CLI distribution of the lightweight but powerful source code editor",
     "homepage": "https://code.visualstudio.com/",
     "license": {
@@ -8,12 +8,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://update.code.visualstudio.com/1.100.2/cli-win32-x64/stable#/dl.7z",
-            "hash": "777206485bf99ab8dfbb0f443f8066141ee78a44f55cf917e425c755519a2484"
+            "url": "https://update.code.visualstudio.com/1.100.3/cli-win32-x64/stable#/dl.7z",
+            "hash": "9850cbe35c716ecbf7a8029963430bc9d01946bac874cb667022031af8525cc2"
         },
         "arm64": {
-            "url": "https://update.code.visualstudio.com/1.100.2/cli-win32-arm64/stable#/dl.7z",
-            "hash": "6261eb54fdd2475e7511bedabf512328746d30333655d59ed27f6c7da55fe791"
+            "url": "https://update.code.visualstudio.com/1.100.3/cli-win32-arm64/stable#/dl.7z",
+            "hash": "7320f5346e872c39ae5c046fb9fff6239b9d1b89a9e8036c9b910738163edfbc"
         }
     },
     "bin": [
